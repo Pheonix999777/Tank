@@ -1,0 +1,332 @@
+.faq {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.faq__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.faq__button {
+  width: 100%;
+  background: #252c2c;
+  border: 1px solid #939697;
+  border-radius: 8px;
+  padding: 14px 20px;
+  color: $main-color;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq__button:focus .faq__dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.faq__dropdown-arrow {
+  margin-left: auto;
+}
+
+.faq__menu {
+  @include reset-list;
+  padding: 18px;
+  background: #252c2c;
+  width: 100%;
+
+  border-radius: 8px;
+}
+
+.faq__dropdown-item {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.faq__dropdown-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.faq__flex {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.faq__box {
+  width: calc(100% / 3 - 24px);
+}
+
+.faq__ul {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.faq__card {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #939697;
+  padding: 0 20px 0 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.faq__card-main {
+  display: flex;
+}
+
+.faq__block {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.faq__card-tittle {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.faq__card-spn {
+  color: #939697;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.faq__del {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 34px;
+}
+
+.faq__wrapper {
+  display: inline-flex;
+  margin-top: 27px;
+}
+
+.faq__line {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.faq__line:not(:first-child) {
+  margin-left: 20px;
+}
+
+.faq__right {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  right: 10px;
+}
+
+.faq__link {
+  @include btn-style;
+  justify-content: center;
+  color: $black-color;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: #ff9549;
+  font-size: 14px;
+  padding: 18px 30px;
+  margin-bottom: 12px;
+}
+
+.faq__link:not(:first-child) {
+  background-color: transparent;
+  color: $main-color;
+  border: 1px solid $button-color;
+}
+
+.faq__btn-box {
+  text-align: center;
+}
+
+.faq__btn {
+  padding: 14px 30px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #939697;
+  color: $main-color;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.faq__car-box {
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.faq__car-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.faq__car-wrapper {
+  margin-left: 40px;
+}
+
+.faq__car-btn {
+  @include btn-style;
+  padding: 14px 30px;
+  margin-top: 30px;
+  border: none;
+}
+
+@media screen and (max-width: 1063px) {
+  .faq__card-spn {
+    font-size: 13px;
+  }
+
+  .faq__line {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .faq__ul {
+    display: flex;
+    margin-left: -20px;
+  }
+
+  .faq__card {
+    padding: 20px 20px;
+    display: block;
+    margin-left: 20px;
+  }
+
+  .faq__wrapper {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .faq__del {
+    font-size: 24px;
+    margin-top: 28px;
+  }
+
+  .faq__line:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .faq__card-main {
+    display: block;
+    flex-direction: column;
+  }
+
+  .faq__right {
+    width: 100%;
+    display: flex;
+    position: static;
+  }
+
+  .faq__link {
+    font-size: 14px;
+    padding: 12px 30px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .faq__ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+  }
+
+  .faq__card {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .faq__flex {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .faq__box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .faq__car {
+    width: 400px;
+  }
+
+  .faq__car-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .faq__car {
+    width: 300px;
+  }
+
+  .faq__car-title {
+    font-size: 20px;
+  }
+
+  .faq__car-btn {
+    margin-top: 20px;
+  }
+
+  .faq__car-wrapper {
+    margin-left: 20px;
+  }
+
+  .faq__car-box {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .faq__car-box {
+    display: block;
+  }
+
+  .faq__car-wrapper {
+    margin-left: 0;
+  }
+
+  .faq__car {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .faq__title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .faq__card {
+    width: 100%;
+  }
+
+  .faq__btn-box {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .faq__btn {
+    width: 100%;
+  }
+}
